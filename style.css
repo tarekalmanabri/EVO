@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Teko', sans-serif;
+}
+
+.top-cars-title {
+    font-family: 'Teko', sans-serif;
+}
+
+section,
+footer .container {
+    max-width: 1000px;
+}
+
+header {
+    background-color: #92b3e4;
+}
+
+footer {
+    background-color: #5d82b8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
