@@ -1,6 +1,5 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url('images/evo-background-pic.jpg');
 }
 
 h1,
@@ -22,23 +21,22 @@ a {
     display: flex;
 }
 
-.top-cars-title {
-    font-family: 'Teko', sans-serif;
-}
-
 section,
 footer .container {
     max-width: 1000px;
 }
 
 header {
-    background-color: #92b3e4;
+    background-color: rgb(136, 0, 0);
+    text-transform: uppercase;
+    color: whitesmoke;
 }
 
 footer {
-    background-color: #5d82b8;
+    background-color: rgb(136, 0, 0);
     padding-top: 10px;
     padding-bottom: 10px;
+    color: whitesmoke;
 }
 
 .container {
@@ -47,16 +45,37 @@ footer {
 }
 
 section.container {
-    background-color: tan;
     padding: 10px;
-    border-bottom: 5px solid #5f5533;
+    border-bottom: 5px solid #000;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
+
+/* Top cars */
+
 .top-cars img {
+    border-radius: 10px;
+    border: 3px solid #000;
+}
+
+.top-cars .top-cars-title:hover {
+    /* transform: scale(1.1); */
+    background-color: rgb(136, 0, 0);
+}
+
+.top-cars .top-cars-title:hover span {
+    color: white;
+}
+
+.top-cars .top-cars-title:hover img {
+    border-color: transparent;
+}
+
+.top-cars-title {
+    transition: background-color 0.7s ease;
+    font-family: 'Teko', sans-serif;
     border-radius: 5px;
-    border: 4px solid #5f5533;
 }
 
 .car-row {
@@ -66,22 +85,55 @@ section.container {
 .car-row div {
     padding: 10px;
 }
+
 .nav-bar {
     list-style: none;
     padding: 10px;
-
+    margin: 0px;
 }
+
 .nav-bar li a {
     text-decoration: none;
     color: inherit;
-    display: block;    
+    display: block;
     font-size: 20px;
     padding: 10px 30px;
-    
+    transition: background-color 0.5s ease-out;
 }
+
 .nav-bar li {
     padding: 10px 30px;
 }
+
 .nav-bar li a:hover {
-    background-color: tan;
+    background-color: #000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th {
+    border: 3px solid black;
+}
+
+td {
+    padding: 8px;
+    border: 3px dashed gray;
+}
+
+#main-pic {
+    width: 100%;
+    margin-top: 0px;
+}
+
+#contact {
+    background-color: #eeeeee;
+}
+
+#contact .container {
+    margin-bottom: 0px;
+    border-bottom: none;
 }
