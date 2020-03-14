@@ -66,3 +66,22 @@ section.container {
 .car-row div {
     padding: 10px;
 }
+.nav-bar {
+    list-style: none;
+    padding: 10px;
+
+}
+.nav-bar li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;    
+    font-size: 20px;
+    padding: 10px 30px;
+    
+}
+.nav-bar li {
+    padding: 10px 30px;
+}
+.nav-bar li a:hover {
+    background-color: tan;
+}
