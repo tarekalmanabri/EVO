@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1,
@@ -8,11 +8,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
 }
 
 a {
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
     font-size: small;
     color: black;
 }
@@ -30,6 +30,40 @@ header {
     background-color: rgb(136, 0, 0);
     text-transform: uppercase;
     color: whitesmoke;
+}
+
+.nav-bar {
+    flex: 1;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.5s ease-out;
+}
+
+.nav-bar li {
+    padding: 10px 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-bar li a:hover {
+    background-color: #000;
+}
+
+
+/* the photo uder the header */
+
+#main-pic {
+    width: 100%;
+    margin-top: 0px;
 }
 
 footer {
@@ -74,7 +108,7 @@ section.container {
 
 .top-cars-title {
     transition: background-color 0.7s ease;
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
     border-radius: 5px;
 }
 
@@ -84,29 +118,6 @@ section.container {
 
 .car-row div {
     padding: 10px;
-}
-
-.nav-bar {
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
-}
-
-.nav-bar li a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    font-size: 20px;
-    padding: 10px 30px;
-    transition: background-color 0.5s ease-out;
-}
-
-.nav-bar li {
-    padding: 10px 30px;
-}
-
-.nav-bar li a:hover {
-    background-color: #000;
 }
 
 table {
@@ -124,16 +135,51 @@ td {
     border: 3px dashed gray;
 }
 
-#main-pic {
-    width: 100%;
-    margin-top: 0px;
-}
+
+/* the contact form at the end of the page */
 
 #contact {
+    border-radius: 5px;
+    padding: 20px;
     background-color: #eeeeee;
 }
 
-#contact .container {
-    margin-bottom: 0px;
-    border-bottom: none;
+.contact-form {
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"],
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(136, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+}
+
+input[type="email"],
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

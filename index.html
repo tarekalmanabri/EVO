@@ -7,34 +7,29 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
     <header class="flex">
         <div class="container flex">
             <h1>Evolution of Evo</h1>
-            <div>
-                <ul class="nav-bar flex">
-                    <li>
-                        <a href="#awards">History & Awards</a>
-                    </li>
-                    <li>
-                        <a href="#info">In Details</a>
-                    </li>
-                    <li>
-                        <a href="#top-cars">Top EVO's</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Get in touch</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav-bar flex">
+                <li>
+                    <a href="#awards">History & Awards</a>
+                </li>
+                <li>
+                    <a href="#info">In Details</a>
+                </li>
+                <li>
+                    <a href="#top-cars">Top EVO's</a>
+                </li>
+                <li>
+                    <a href="#contact">Get in touch</a>
+                </li>
+            </ul>
         </div>
     </header>
-    <img id="main-pic" src="images/evo-background-pic.jpg" alt=" lancer evo IX">
+    <img id="main-pic" src="https://i.imgur.com/MgiOWHj.jpg" alt=" lancer evo IX">
     <section class="container">
         <div>
             <h2>Introduction:</h2>
@@ -54,7 +49,7 @@
         <div class="top-cars">
             <div class="car-row">
                 <div class="top-cars-title">
-                    <a href="https://wallpapercave.com/mitsubishi-lancer-evolution-x-wallpaper" target="_blank"><img src="images/mitsubishi-lancer-evo-x.jpg" alt="evo mitsubishi-lancer-evo-x"></a>
+                    <a href="https://wallpapercave.com/mitsubishi-lancer-evolution-x-wallpaper" target="_blank"><img src="https://i.imgur.com/wYwwEXY.jpg" alt="evo mitsubishi-lancer-evo-x"></a>
                     <span>Lancer Evolution X</span>
                 </div>
 
@@ -67,7 +62,7 @@
             </div>
             <div class="car-row">
                 <div class="top-cars-title">
-                    <a href="http://getwallpapers.com/collection/mitsubishi-evo-8-wallpaper" target="_blank"><img src="images/mitsubishi-lancer-evolution-viii.jpg" alt="mitsubishi-lancer-evolution-viii"></a>
+                    <a href="http://getwallpapers.com/collection/mitsubishi-evo-8-wallpaper" target="_blank"><img src="https://i.imgur.com/NIccACg.jpg" alt="mitsubishi-lancer-evolution-viii"></a>
                     <span>Lancer Evolution VIII</span>
                 </div>
 
@@ -80,7 +75,7 @@
             </div>
             <div class="car-row">
                 <div class="top-cars-title">
-                    <a href="https://www.mad4wheels.com/mitsubishi/lancer-evolution-v-1998/car-wallpaper-281475" target="_blank"><img src="images/mitsubishi-lancer-evolution-v.jpg" alt="mitsubishi-lancer-evolution-v"></a>
+                    <a href="https://www.mad4wheels.com/mitsubishi/lancer-evolution-v-1998/car-wallpaper-281475" target="_blank"><img src="https://i.imgur.com/iFk2Cdd.jpg" alt="mitsubishi-lancer-evolution-v"></a>
                     <span>Lancer Evolution V</span>
                 </div>
 
@@ -93,7 +88,7 @@
             </div>
             <div class="car-row">
                 <div class="top-cars-title">
-                    <a href="https://www.mad4wheels.com/mitsubishi/lancer-evolution-vi-1999" target="_blank"><img src="images/mitsubishi-lancer-evolution-vi.jpg" alt="mitsubishi-lancer-evolution-vi"></a>
+                    <a href="https://www.mad4wheels.com/mitsubishi/lancer-evolution-vi-1999" target="_blank"><img src="https://i.imgur.com/Lj7bLQq.jpg" alt="mitsubishi-lancer-evolution-vi"></a>
                     <span>Lancer Evolution VI</span>
                 </div>
 
@@ -208,17 +203,29 @@
     </section>
     <div id="contact">
 
-        <section class="container">
+        <section class="contact-form">
 
             <h2>Get in touch</h2>
             <form action="mailto:tarek.almanabri@gmail.com" method="post" enctype="text/plain">
-                <label>
-                    E-mail address
-                    <input type="email">
-                </label>
-
-
-                <input type="submit">
+                <div id="btm-div">
+                    <label for="email">
+                        E-mail address
+                    </label>
+                </div>
+                <div>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="text">
+                    Full Name
+                    </label>
+                </div>
+                <div>
+                    <input type="text" id="text">
+                </div>
+                <div>
+                    <input type="submit" value="Send">
+                </div>
             </form>
 
         </section>
